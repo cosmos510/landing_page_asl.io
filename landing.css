@@ -7,79 +7,127 @@ body {
     color: #333;
 }
 
-.header {
+header {
     background: #4CAF50;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 50px 20px;
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-.header p {
-    font-size: 1.2em;
-}
-
-.nav {
+.navbar {
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav a {
+.navbar h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.navbar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    display: inline;
     margin: 0 15px;
+}
+
+.navbar nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-.nav a:hover {
+.navbar nav a:hover {
     text-decoration: underline;
+}
+
+.intro {
+    margin-top: 20px;
 }
 
 .cover-image {
     width: 100%;
+    max-width: 800px;
     height: auto;
-    margin: 0;
+    border-radius: 10px;
+}
+
+.intro h2 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e7f7e7;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4CAF50;
 }
 
 .features {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 20px;
-    background: #fff;
 }
 
 .feature {
-    background: #e7f7e7;
+    background: #fff;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 15px;
     width: 30%;
-    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
 }
 
 .feature img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.about {
-    padding: 20px;
-    background: #fff;
-}
-
-.about h2 {
+footer {
     text-align: center;
-}
-
-.footer {
-    text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     background: #4CAF50;
     color: white;
+}
+
+.scroll-top {
+    color: white;
+    text-decoration: underline;
 }
