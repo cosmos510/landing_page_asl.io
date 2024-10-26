@@ -48,8 +48,11 @@ html {
     transform: translateY(-10px);
   }
   
+  .cover-image {
+    width: 50%;
+  }
   .feature-image {
-    width: 100%;
+    width: 50%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
