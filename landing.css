@@ -1,169 +1,100 @@
-/* General Styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     background-color: #f5f7fa;
     color: #333;
 }
 
 header {
-    background: linear-gradient(to bottom right, #1e1e2f, #2a2a3a);
+    background-color: #1e1e2f;
     color: white;
-    padding: 1.5rem 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar nav a {
+    color: #f0f8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro {
+    margin-top: 1rem;
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* Adjust based on your image size */
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-content h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-header nav {
-    display: flex;
-    gap: 1.5rem;
-}
-
-header nav a {
-    color: #f0f8ff;
-    text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-header nav a:hover {
-    background-color: #3e3e5c;
-}
-
-/* Hero Section */
-.hero {
+h2 {
+    margin: 20px 0;
     text-align: center;
-    padding: 4rem 2rem;
-    background-color: #fff;
-    margin: 2rem auto;
-    border-radius: 15px;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.cta-button {
-    padding: 1rem 2rem;
-    background-color: #0ABAB5;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #008080;
-}
-
-/* Features Section */
-.features {
+#features {
     display: flex;
     justify-content: space-around;
-    margin: 2.5rem 0;
+    margin-top: 2rem;
 }
 
-.feature-card {
+.feature {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
     flex: 1;
     margin: 0 1rem;
-    background: #ffffff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .feature-image {
-    width: 100%; /* Make the image responsive */
+    max-width: 100%; /* Keep images responsive */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+#about {
+    background-color: #ffffff;
+    padding: 2rem;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
 }
 
-/* Registration Section */
-.register-section {
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
-    max-width: 600px;
-}
-
-.register-section h2 {
-    text-align: center;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin: 10px 0 5px;
-}
-
-form input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-form button {
-    padding: 10px;
+footer {
     background-color: #1e1e2f;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #333;
-}
-
-/* About Section */
-#about {
-    padding: 2rem;
-}
-
-/* Footer */
-footer {
-    background: #1e1e2f;
-    color: white;
-    padding: 1rem 0;
     text-align: center;
-    margin-top: auto; /* Push footer to the bottom */
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
