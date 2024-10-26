@@ -68,7 +68,7 @@ nav ul li a:hover {
 }
 
 .cover-image {
-    width: 80%; /* Reduced from 100% to 80% */
+    width: 50%; /* Reduced from 100% to 80% */
     max-width: 600px; /* Optional: Set a max width for larger screens */
     height: auto;
     margin: 1rem 0;
