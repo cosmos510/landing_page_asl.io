@@ -14,6 +14,11 @@ header {
     text-align: center;
 }
 
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .cover-card {
     background: white;
     border-radius: 15px;
@@ -24,8 +29,8 @@ header {
 }
 
 .cover-image {
-    width: 100%;  /* Makes the cover image responsive */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -33,26 +38,27 @@ header {
     display: flex;
     justify-content: space-around;
     margin: 2rem 0;
+    flex-wrap: wrap; /* Added for better responsiveness */
 }
 
 .feature {
-    background: #e7f7e7;
+    background: #ffffff; /* Ensured a white background for better contrast */
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 15px;
-    width: 40%;  /* Adjusted width for larger size */
+    width: 45%; /* Adjusted width for better sizing */
     text-align: center;
-    transition: transform 0.2s; /* Optional: Add a hover effect */
-}
-
-.feature:hover {
-    transform: scale(1.02); /* Slightly enlarge on hover */
+    margin: 10px; /* Added margin for spacing */
 }
 
 .feature-image {
-    max-width: 90%; /* Increased size */
+    max-width: 80%; /* Adjusted for better sizing */
     height: auto;
     border-radius: 5px;
+}
+
+h2, h3 {
+    color: #1e1e2f; /* Improved color for headings */
 }
 
 .about {
@@ -60,9 +66,9 @@ header {
     background: #fff;
 }
 
-.footer {
+footer {
     text-align: center;
     padding: 10px 0;
-    background: #4CAF50;
+    background: #1e1e2f; /* Keep footer consistent with header */
     color: white;
 }
