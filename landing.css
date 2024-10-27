@@ -1,79 +1,40 @@
-/* landing.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-/* General styles */
-html {
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  /* Dark mode */
-  body.dark-mode {
-    background-color: #222;
-    color: #fff;
-  }
-  
-  /* Header styles */
-  header {
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  
-  /* Feature section styles */
-  #features {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 40px;
-  }
-  
-  .feature {
-    flex: 1 1 300px;
-    margin: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .feature:hover {
-    transform: translateY(-10px);
-  }
-  
-  .cover-image {
-    width: 50%;
-  }
-  .feature-image {
-    width: 50%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  /* About section styles */
-  #about {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    #features {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+section {
+  padding: 40px;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.feature img {
+  max-width: 300px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
