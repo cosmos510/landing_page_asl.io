@@ -444,8 +444,10 @@ html {
 }
 
 .img_ftr {
-  width: 100%;
-  bottom: 20%;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
 }
 
 @media (max-width: 480px) {
