@@ -71,6 +71,7 @@ header nav #auth-links {
   text-align: center;
 }
 .feature {
+  position: relative;
   flex: 1;
   margin: 0 1.5rem;
   background: #ffffff;
@@ -444,12 +445,12 @@ html {
 }
 
 .img_ftr {
-  display: block;
-  max-width: 80%;
-  height: auto;
-  margin: 20px auto 0;
-  position: relative;
-  bottom: 0;
+  position: absolute;         
+  bottom: 20px;              
+  left: 50%;                 
+  transform: translateX(-50%);
+  max-width: 80%;           
+  height: auto;             
 }
 
 @media (max-width: 480px) {
