@@ -444,11 +444,12 @@ html {
 }
 
 .img_ftr {
-  bottom: 10px;    
-  left: 50%; 
-  transform: translateX(-50%);
-  max-width: 100%;          
+  display: block;
+  max-width: 80%;
   height: auto;
+  margin: 20px auto 0;
+  position: relative;
+  bottom: 0;
 }
 
 @media (max-width: 480px) {
