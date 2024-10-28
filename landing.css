@@ -76,7 +76,6 @@ header nav #auth-links {
   margin: 0 1.5rem;
   background: #ffffff;
   padding: 2rem;
-  padding-bottom: 60px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -447,8 +446,7 @@ html {
 
 .img_ftr {
   position: absolute;         
-  bottom: 20px;              
-  left: 50%;                 
+  bottom: 20px;                              
   max-width: 80%;  
   height: auto;             
 }
